@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"testing"
 
-	"github.com/bufdata/coingecko-api/geckoterminal"
+	"github.com/kkyr/coingecko-api/geckoterminal"
 )
 
 func TestClient_GetNetworks(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bufdata/coingecko-api/util"
+	"github.com/kkyr/coingecko-api/util"
 )
 
 // Ping checks API server status.

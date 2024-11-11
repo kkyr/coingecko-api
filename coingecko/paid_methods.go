@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/bufdata/coingecko-api/util"
+	"github.com/kkyr/coingecko-api/util"
 )
 
 // ListLatest200Coins gets the latest 200 coins (id & activated time) that recently listed on CoinGecko.com.

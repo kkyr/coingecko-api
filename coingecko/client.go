@@ -7,8 +7,6 @@ import (
 	"io"
 	"log/slog"
 	"net/http"
-
-	"github.com/bufdata/coingecko-api/util"
 )
 
 // Client struct
@@ -34,7 +32,6 @@ func NewCoinGecko(apiKey string, isProAPIKey bool, httpClient *http.Client) *Cli
 		httpClient = http.DefaultClient
 	}
 
-	util.GetLogger("CoinGecko")
 	return &Client{
 		apiURL:     apiURL,
 		apiKey:     apiKey,

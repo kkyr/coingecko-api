@@ -7,8 +7,6 @@ import (
 	"io"
 	"log/slog"
 	"net/http"
-
-	"github.com/bufdata/coingecko-api/util"
 )
 
 // Client struct
@@ -22,7 +20,6 @@ func NewGeckoTerminal(httpClient *http.Client) *Client {
 		httpClient = http.DefaultClient
 	}
 
-	util.GetLogger("GeckoTerminal")
 	return &Client{
 		httpClient: httpClient,
 	}

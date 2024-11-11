@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"testing"
 
-	"github.com/bufdata/coingecko-api/coingecko"
+	"github.com/kkyr/coingecko-api/coingecko"
 )
 
 const emptyString = ""
