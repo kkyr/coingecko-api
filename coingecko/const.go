@@ -12,6 +12,7 @@ const (
 
 	proAPIKeyQueryParam = "x_cg_pro_api_key"
 	proAPIKeyHeader     = "x-cg-pro-api-key"
+	freeAPIKeyHeader    = "x-cg-demo-api-key"
 )
 
 // CoinGecko API path

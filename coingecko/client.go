@@ -89,11 +89,15 @@ func (c *Client) doAPI(req *http.Request) ([]byte, http.Header, error) {
 //
 // CoinGecko supports supplying API key in one of two ways:
 //
-// 1. Header: x-cg-pro-api-key
+// 1. Header: x-cg-pro-api-key OR x-cg-demo-api-key
 //
 // 2. Query string parameter: x_cg_pro_api_key
 func (c *Client) checkAPIKey(req *http.Request) {
 	if c.apiKey != "" {
-		req.Header.Add(proAPIKeyHeader, c.apiKey)
+		if c.apiURL == proAPIEndpoint {
+			req.Header.Add(proAPIKeyHeader, c.apiKey)
+		} else {
+			req.Header.Add(freeAPIKeyHeader, c.apiKey)
+		}
 	}
 }
